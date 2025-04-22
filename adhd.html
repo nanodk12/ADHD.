@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <link rel="icon" type="image/x-icon" href="adhd.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>om ADHD</title>
+    <style>
+        /* Basic styling - du kan ændre farverne */
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ff0000;
+        }
+
+        .header {
+            text-align: center;
+            color: #333;
+        }
+
+        .kat-billede {
+            width: 300px;
+            border-radius: 15px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .sektion {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Velkommen til siden om ADHD</h1>
+    </header>
+
+    <nav>
+        <a href="#om">Om ADHD</a>
+        <a href="#galleri">der er ikke noget endnu</a>
+        <a href="#mad">hvad ADHD gøre</a>
+        <a href="https://da.wikipedia.org/wiki/ADHD" class="knap-style">
+            Klik her
+          </a>
+          
+          <style>
+          .knap-style {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          .knap-style:hover {
+            background-color: #ff0000;
+          }
+          </style>
+    </nav>
+
+    <main>
+        <section class="sektion" id="om">
+            <h2>Om ADHD</h2>
+            <p>hvad ADHD gøre</p>
+            <ul>
+                <li>man er mere Hyper</li>
+                <li>Har svært ved at udføre rolige opgaver eller aktiviteter</li>
+                <li>Buser ud med upassende kommentarer, viser deres følelser uden tilbageholdenhed og handler uden hensyn til konsekvenserne</li>
+            </ul>
+        </section>
+
+        <section class="sektion" id="mad">
+            <h2>adhd</h2>
+            <p>hvad står ADHD for</p>
+            <ol>
+                <li>Attention</li>
+                <li>Disorder</li>
+                <li>Hyper</li>
+                <li>Disorder</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 50px; color: #666;">
+        <p>© 2024 ADHD universet</p>
+    </footer>
+
+    <script>
+
+        // Katte-lyd ved klik på footer
+        document.querySelector('footer').addEventListener('click', function() {
+            const katteLyde = ['Miau!', 'Purr...', 'Mrrrow!', 'Prrrrt'];
+            const tilfældigLyd = katteLyde[Math.floor(Math.random() * katteLyde.length)];
+            alert(tilfældigLyd);
+        });
+    </script>
+</body>
+</html>
